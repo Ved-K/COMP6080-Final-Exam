@@ -5,7 +5,7 @@
 	min-height: 100vh;
 }
 
-.board-background {
+.slido-board-background {
 	background-color: #ffffff;
 	max-width: 450px;
 	aspect-ratio: 1 / 1; /* make it a square */

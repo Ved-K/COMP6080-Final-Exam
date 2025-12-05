@@ -1,0 +1,35 @@
+.tetro-viewport {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.tetro-board-background {
+	background-color: #ffffff;
+	margin: 100px 20px 100px 20px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr); /* 3 equal columns */
+	grid-template-rows: repeat(12, 1fr); /* 3 equal columns */
+}
+
+.normal-tiles {
+	border: 1px solid #333333;
+	background-color: transparent;
+	padding: 0;
+
+	/* this is what fixed the zoom-in effect */
+	width: 50px;
+	height: 50px;
+}
+
+.normal-tiles.active {
+	background: #00aaff;
+}
+
+.normal-tiles.filled {
+	background: #777;
+}
+
+.normal-tiles.green {
+	background: rgb(0, 255, 0);
+}

@@ -166,7 +166,7 @@ function Slido() {
 
 	return (
 		<div className="viewport">
-			<div className="board-background" tabIndex={0}>
+			<div className="slido-board-background" tabIndex={0}>
 				{board.map((row, x) =>
 					row.map((cell, y) => (
 						<button
