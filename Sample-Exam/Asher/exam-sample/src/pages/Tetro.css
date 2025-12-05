@@ -1,0 +1,42 @@
+.tetro-container {
+  /* Use all of the main-body space */
+  display: flex;
+	flex-grow: 1;
+	text-align: center;
+	align-items: center;
+	padding-top: 80px;
+	flex-direction: column;
+	padding-bottom: 50px;
+	justify-content: center;
+}
+
+/* The 10x12 grid with required margins */
+.tetro-board {
+  margin: 20px 20px 100px 20px; /* top, right, bottom, left */
+  width: calc(100% - 40px);     /* account for left/right 20px margins */
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 3rem);
+  grid-template-rows: repeat(12, 2.5rem);
+}
+
+/* Base cell style per spec */
+.tetro-cell {
+  border: 1px solid #333333;
+  background-color: transparent;
+}
+
+/* Locked normal block cells */
+.tetro-cell--filled {
+  background-color: #5555ff;
+}
+
+/* Currently falling block cells */
+.tetro-cell--current {
+  background-color: #ff9933;
+}
+
+/* Full rows that turned green */
+.tetro-cell--green {
+  background-color: rgb(0, 255, 0);
+}
