@@ -1,0 +1,38 @@
+/* Style the root element (the main wrapper created by Vite) */
+#root {
+  /* Limit how wide the content can grow */
+  max-width: 1280px;
+
+  /* Center horizontally by removing default margin and auto-centering */
+  margin: 0 auto;
+
+  /* Add space inside the container */
+  padding: 2rem;
+
+  /* Center-align all text inside root */
+  text-align: center;
+}
+
+/* Main container that holds the game UI elements */
+.container {
+  /* Use flexbox layout */
+  display: flex;
+
+  /* Stack child elements vertically */
+  flex-direction: column;
+}
+
+/* Style for the word the player must type */
+.word-display {
+  /* Make the word large for visibility */
+  font-size: 2rem;
+
+  /* Add spacing below the word */
+  margin-bottom: 1rem;
+}
+
+/* Style for the input field where the user types the word */
+#word-input {
+  /* Add spacing below the input field */
+  margin-bottom: 1rem;
+}
