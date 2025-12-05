@@ -1,0 +1,61 @@
+.minesweeper {
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.ms-top-bar {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.ms-top-bar button {
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+}
+
+.flag-mode-on {
+  background-color: #ffd966;
+}
+
+.ms-status {
+  margin-bottom: 0.75rem;
+}
+
+.ms-board {
+  display: inline-block;
+  border: 2px solid #555;
+  background-color: #bdbdbd;
+  padding: 4px;
+}
+
+.ms-row {
+  display: flex;
+}
+
+.ms-cell {
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+  border: 1px solid #777;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ms-cell.revealed {
+  background-color: #c0c0c0;
+  cursor: default;
+}
+
+.ms-cell.mine.revealed {
+  background-color: #ffaaaa;
+}
+
+.ms-cell:focus {
+  outline: none;
+}
