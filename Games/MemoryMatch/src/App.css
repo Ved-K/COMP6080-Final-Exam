@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+}
+
+.header-title {
+  color: rgba(41, 35, 35, 0.938);
+  font-size: 3em;
+  margin-right: 40%;
+}
+
+.nav a {
+  color: blue;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-full {
+  display: block;
+  margin: 15px;
+}
+
+.nav-short {
+  display: none;
+  margin: 15px;
+}
+
+.main-body {
+  /* spacing for the nav and footer since absolute position of those items
+  will just be placed over the main layer */
+  padding-top: 80px;
+  /* 100view height - 80px (header) - 50px (footer) */
+  min-height: calc(100vh - 130px);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background: #999999;
+}
+
+
+@media (max-width: 800px) {
+  .nav-full {
+    display: none;
+  }
+
+  .nav-short {
+    display: block;
+  }
+}
