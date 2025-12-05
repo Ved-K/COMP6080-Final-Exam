@@ -1,0 +1,24 @@
+/* Dashboard Styling */
+.dashboard-title {
+  color: red;
+  font-size: 2em;
+}
+
+.dashboard-score {
+  font-size: 1.2em;
+}
+
+.reset-button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background: rgb(38, 108, 212);
+  cursor: pointer;
+  font: inherit;
+  color: white;
+}
+
+.reset-button:active {
+  color: black;
+  background: rgba(76, 146, 212, 0.5);
+}
