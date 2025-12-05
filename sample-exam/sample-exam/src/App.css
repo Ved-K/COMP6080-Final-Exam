@@ -1,0 +1,70 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/* this eliminates the 8px padding that the browser adds (body's default margin) */
+body {
+	margin: 0;
+}
+
+.header-bar {
+	height: 80px;
+	width: 100%;
+	background-color: #eeeeee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.header-actions-area {
+	display: flex;
+	flex-direction: row;
+
+	/* horizontal alignment */
+	justify-content: flex-end;
+
+	/* vertical alignment */
+	align-items: center;
+
+	/* this makes the flexbox start from the right */
+	margin-left: auto;
+	margin-right: 30px;
+	gap: 30px;
+
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.header-action-button {
+	border: none;
+	background-color: transparent;
+	padding: 0px;
+	padding-top: 5px;
+
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.header-logo {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.footer-bar {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+
+	/* this fixes it to the bottom */
+	bottom: 0;
+	background-color: #999999;
+}

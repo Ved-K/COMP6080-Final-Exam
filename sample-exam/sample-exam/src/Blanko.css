@@ -1,0 +1,23 @@
+.viewport {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* centers children vertically */
+	align-items: center; /* centers children horizontally */
+	/* make sure the parent container occupies 100% of viewport height */
+	height: 100vh;
+}
+
+.blanko-tiles {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	max-width: 100%;
+}
+
+textarea {
+	align-self: flex-start;
+	width: 20px;
+	height: 20px;
+}

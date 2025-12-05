@@ -1,0 +1,57 @@
+.viewport {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.board-background {
+	background-color: #ffffff;
+	max-width: 450px;
+	aspect-ratio: 1 / 1; /* make it a square */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+	padding: 10px;
+}
+
+.normal-tiles {
+	height: 150px;
+	width: 150px;
+	aspect-ratio: 1 / 1; /* each tile is a square */
+	border: 1px solid #333;
+	background-color: #eeeeee;
+	font-size: 2rem;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.buttons-array {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.buttons-array button {
+	background-color: blueviolet;
+	color: white;
+	height: 50px;
+	width: 100px;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+.buttons-array button:hover {
+	transform: translateY(-2px);
+	background-color: brown;
+}
+
+.buttons-array button:disabled {
+	/* disables hover */
+	pointer-events: none;
+	background-color: grey;
+}

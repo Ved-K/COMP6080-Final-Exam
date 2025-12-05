@@ -1,0 +1,30 @@
+.viewport-wordle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.board-background {
+	background-color: #ffffff;
+	max-width: 350px;
+	aspect-ratio: 1 / 1; /* make it a square */
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+	padding: 10px;
+}
+
+.normal-tiles {
+	height: 80px;
+	width: 80px;
+	aspect-ratio: 1 / 1; /* each tile is a square */
+	border: 1px solid #333;
+	background-color: #eeeeee;
+	font-size: 2rem;
+	padding: 0;
+}
+
+.selected-row {
+	background-color: #333;
+	color: #eeeeee;
+}

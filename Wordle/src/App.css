@@ -1,0 +1,42 @@
+#root {
+	margin: 0;
+}
+
+.header {
+	height: 80px;
+	width: 100%;
+	background-color: #eeeeee;
+	position: fixed;
+	display: flex;
+}
+
+.footer {
+	height: 50px;
+	width: 100%;
+	background-color: #999999;
+	position: fixed;
+	bottom: 0;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+	margin: 15px;
+	border-radius: 50%;
+	object-fit: contain;
+}
+
+.header-action-area {
+	display: flex;
+	flex-direction: row;
+	/* horizontal alignment */
+	justify-content: flex-end;
+
+	/* vertical alignment */
+	align-items: center;
+
+	/* this makes the flexbox start from the right */
+	margin-left: auto;
+	margin-right: 30px;
+	gap: 20px;
+}
