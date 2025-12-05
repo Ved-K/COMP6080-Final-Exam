@@ -1,0 +1,137 @@
+/* Overall app container */
+.app {
+	/* Use a clean, default sans-serif font */
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	/* Take up full viewport height */
+	min-height: 100vh;
+	/* Dark background for contrast */
+	background: #111827;
+	/* Light text color */
+	color: #f9fafb;
+	/* Use flexbox for layout */
+	display: flex;
+	/* Stack children vertically */
+	flex-direction: column;
+	/* Center items horizontally */
+	align-items: center;
+	/* Align items towards the top vertically */
+	justify-content: flex-start;
+	/* Add padding around the edges */
+	padding: 24px 16px;
+	/* Include padding in total width/height calculations */
+	box-sizing: border-box;
+}
+
+/* Main title styling */
+.app h1 {
+	/* Space below the heading */
+	margin-bottom: 16px;
+	/* Increase font size for the heading */
+	font-size: 24px;
+}
+
+/* Board container (7 columns x 6 rows) */
+.board {
+	/* Use CSS grid to layout the cells */
+	display: grid;
+	/* 7 equal-width columns for the 7x6 board */
+	grid-template-columns: repeat(7, 56px);
+	/* 6 equal-height rows */
+	grid-template-rows: repeat(6, 56px);
+	/* Space between the cells */
+	gap: 6px;
+	/* Inner padding around the grid */
+	padding: 10px;
+	/* Darker background behind the grid */
+	background: #0f172a;
+	/* Rounded corners for nicer look */
+	border-radius: 12px;
+	/* Drop shadow to lift the board off the background */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	/* Space below the board before the status text */
+	margin-bottom: 16px;
+}
+
+/* Single board cell (each clickable square) */
+.cell {
+	/* Fixed width for each grid cell */
+	width: 56px;
+	/* Fixed height for each grid cell */
+	height: 56px;
+	/* Rounded corners */
+	border-radius: 10px;
+	/* Remove default button border */
+	border: none;
+	/* Remove default padding */
+	padding: 0;
+	/* Base background color of the empty cell */
+	background: #1e293b;
+	/* Use flex to center the disc inside */
+	display: flex;
+	/* Center the disc horizontally */
+	align-items: center;
+	/* Center the disc vertically */
+	justify-content: center;
+	/* Show pointer cursor to indicate clickability */
+	cursor: pointer;
+}
+
+/* Hover state for a cell (when mouse is over it) */
+.cell:hover {
+	/* Slightly lighter background on hover */
+	background: #334155;
+}
+
+/* Piece (disc) inside a cell */
+.disc {
+	/* Disc takes up most of the cell size */
+	width: 80%;
+	height: 80%;
+	/* Fully rounded to make it a circle */
+	border-radius: 50%;
+}
+
+/* Red player disc */
+.red {
+	/* Bright red color for "R" player */
+	background: #ef4444;
+}
+
+/* Yellow player disc */
+.yellow {
+	/* Bright yellow color for "Y" player */
+	background: #facc15;
+}
+
+/* Status text under the board */
+.status {
+	/* Space below the status before the reset button */
+	margin-bottom: 12px;
+	/* Slightly larger text */
+	font-size: 16px;
+}
+
+/* Reset button styling */
+.resetButton {
+	/* Vertical and horizontal padding */
+	padding: 8px 16px;
+	/* Fully rounded corners (pill shape) */
+	border-radius: 999px;
+	/* Remove default border */
+	border: none;
+	/* Blue background color for the button */
+	background: #4f46e5;
+	/* Light text color */
+	color: #f9fafb;
+	/* Set text size */
+	font-size: 14px;
+	/* Pointer cursor to show it's clickable */
+	cursor: pointer;
+}
+
+/* Hover state for reset button */
+.resetButton:hover {
+	/* Slightly darker blue on hover */
+	background: #4338ca;
+}
