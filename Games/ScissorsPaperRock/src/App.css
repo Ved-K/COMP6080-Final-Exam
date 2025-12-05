@@ -1,0 +1,4 @@
+.spr-viewport {
+	display: flex;
+	flex-direction: column;
+}
