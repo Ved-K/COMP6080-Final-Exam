@@ -1,0 +1,113 @@
+#root {
+  margin: 0;
+}
+
+body {
+  margin: 0
+}
+
+.Home_Header{
+  height: 80px;
+  width: 100vw;
+  background-color: #eeeeee;
+  margin: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.Home_logo{
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin: 15px;
+}
+
+.homeButtons{
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.buttons{
+  border: none;
+  background-color: transparent;
+}
+
+.pageContent{
+  padding-top: 85px;
+}
+
+.HomePage{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeFooter{
+  margin-top: auto;
+  margin-bottom: 0px;
+  height: 50px;
+  width: 100vw;
+  background-color: #999999;
+}
+
+.blanko{
+  width: 50px;
+}
+
+.blankoBlanks{
+  width: 50px;
+
+}
+
+.slidoBoard{
+  height: 600px;
+  width: 600px;
+  border: 1px solid black
+}
+
+.slidoButton{
+  background-color: gray;
+  border: black solid 1px;
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  width: 200px;
+  vertical-align: top;
+}
+
+.slidoImage{
+  margin: 0;
+  padding: 0;
+  border: none;
+  object-fit: contain;
+  height: 198px;
+  width: 198px;
+}
+
+.memoryBoard{
+  height: 400px;
+  width: 400px;
+  border: 1px solid black
+}
+
+.memoryButton{
+  background-color: gray;
+  border: black solid 1px;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  vertical-align: top;
+}
+
+.memoryButtonClicked{
+   background-color: white;
+  border: black solid 1px;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  vertical-align: top;
+}
