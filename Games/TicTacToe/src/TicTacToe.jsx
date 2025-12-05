@@ -3,7 +3,7 @@ import "./TicTacToe.css";
 
 const SIZE = 3;
 const WIN_LINES = [
-  [0, 1, 2], // rows
+  [0, 1, 2], // rows (eg. X's on 0,1,2 or 3,4,5 etc)
   [3, 4, 5],
   [6, 7, 8],
   [0, 3, 6], // cols
@@ -16,12 +16,15 @@ const WIN_LINES = [
 // Helper: check if there's a winner on the board
 // Returns { winner: 'X' | 'O', line: [a,b,c] } or null
 function calculateWinner(board) {
+  // Looping each win line
   for (const [a, b, c] of WIN_LINES) {
+    
     if (
-      board[a] &&
-      board[a] === board[b] &&
-      board[a] === board[c]
+      board[a] &&                 // Not null
+      board[a] === board[b] &&    // Letter (X or O) is same in the 3 spaces
+      board[a] === board[c]       // where a = b = c, stops at that win line and returns it.
     ) {
+      // Returning winning letter (just slect one of the pieces and return winning combination)
       return { winner: board[a], line: [a, b, c] };
     }
   }
@@ -36,10 +39,12 @@ function TicTacToe() {
 
   // Load win counts from localStorage on mount
   useEffect(() => {
+    // ?? checks if null - if so use 0, and the (,10) is to convert to base 10 integer
     const xWins = parseInt(localStorage.getItem("tic-x-wins") ?? "0", 10);
     const oWins = parseInt(localStorage.getItem("tic-o-wins") ?? "0", 10);
     setScore({ X: xWins, O: oWins });
   }, []);
+  // ^ means runs once
 
   const resetBoard = () => {
     setBoard(Array(9).fill(null));
