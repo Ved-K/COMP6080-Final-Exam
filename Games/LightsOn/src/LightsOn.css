@@ -1,0 +1,40 @@
+.lights-on {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 70px);
+  grid-template-rows: repeat(5, 70px);
+  gap: 2px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cell {
+  border: 1px solid #444;
+  cursor: pointer;
+  outline: none;
+}
+
+.cell-on {
+  background-color: yellow;
+}
+
+.cell-off {
+  background-color: #222;
+}
+
+.win-message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
