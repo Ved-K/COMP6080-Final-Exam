@@ -3,6 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	flex-direction: column;
 }
 
 .board-background {
@@ -27,4 +28,20 @@
 .selected-row {
 	background-color: #333;
 	color: #eeeeee;
+}
+
+.correct {
+	background: #6aaa64;
+}
+
+.present {
+	background: #c9b458;
+}
+
+.absent {
+	background: #787c7e;
+}
+
+.reset-button {
+	margin-top: 80px;
 }
